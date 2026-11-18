@@ -24,14 +24,6 @@ from django.core.files.base import ContentFile
 
 import oracledb
 
-# Initialize Oracle Thick mode
-ORACLE_CLIENT_PATH = (
-    r"C:\Users\Asus\Downloads\instantclient-basic-windows.x64-23.26.4.0.0"
-    r"\instantclient_23_26"
-)
-
-oracledb.init_oracle_client(lib_dir=ORACLE_CLIENT_PATH)
-
 MAX_FILE_SIZE = 10 * 1024 * 1024
 ALLOWED_EXTENSIONS = {".csv", ".xlsx", ".xls", ".json"}
 
